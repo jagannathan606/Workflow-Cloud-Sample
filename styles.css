@@ -75,7 +75,6 @@ section {
 /* section -1 */
 /* ---------- */
 .section-1 {
-     position: relative;
      display: flex;
      justify-content: center;
      height: 100vh;
@@ -87,6 +86,7 @@ section {
      margin: 2rem 0;
      text-align: center;
      z-index: 2;
+     height: 35%;
 }
 
 .section-1 p {
@@ -98,14 +98,19 @@ section {
      top: 67%;
      left: 50%;
      transform: translate(-50%, -50%);
-     width: 60rem;
+     width: 85%;
      z-index: 1;
+     object-fit: cover;
+     object-position: center;
 }
 
 /* ---------- */
 /* section -2 */
 /* ---------- */
 .section-2 {
+     position: relative;
+     margin-top: -1rem;
+     z-index: 13;
      background-color: var(--light-violet-bg-color);
 }
 
@@ -113,7 +118,7 @@ section {
      display: flex;
      align-items: center;
      justify-content: space-evenly;
-     height: 100vh;
+     margin: 4rem 0;
 }
 
 .section-2-content img {
@@ -122,7 +127,6 @@ section {
 
 .section-2-about-content {
      width: 40%;
-     margin-top: -3rem;
 }
 
 .section-2-about-content p {
@@ -534,7 +538,9 @@ section {
      width: 39%;
      margin-top: 20px;
 }
-
+.section-10-example-image-2{
+     width: 50%;
+}
 
 
 /* ---------- */
@@ -968,7 +974,9 @@ section {
      justify-content: space-evenly;
      margin: 3rem 0;
 }
-
+.tech-icons div{
+  text-align: center;
+}
 .tech-icons img {
      width: 100px;
 }
@@ -1290,7 +1298,6 @@ section {
 .footer-copyright h6 {
      margin: 5rem 0 3rem;
      font-size: 15px;
-     font-family: "Poppins";
      font-weight: 500;
 }
 
@@ -1299,7 +1306,8 @@ section {
 /* ------------- */
 /* Media Queries */
 /* ------------- */
-/* Tablets */
+/* Tablets Devices*/
+/* -------------- */
 @media (max-width: 768px) {
      h1 {
           font-size: 48px;
@@ -1413,29 +1421,48 @@ section {
 /* -------------- */
 @media (max-width: 480px) {
      h1 {
-          font-size: 36px;
+          font-size: 32px;
      }
 
      h2 {
-          font-size: 23px;
+          font-size: 22px;
      }
 
      h3 {
-          font-size: 20px;
+          font-size: 19px;
+     }
+
+     h4 {
+          font-size: 17px;
      }
 
      p {
           font-size: 12px;
      }
 
+     /* Section - 1 */
+     .section-1 p {
+          margin-top: -8px;
+     }
+
+     .section-1 img {
+          width: 100%;
+          height: 100%;
+     }
 
      /* Section - 2 */
+     .section-2 {
+          margin-top: -2rem;
+          padding: 2rem 0%;
+     }
+
      .section-2-content {
+          margin: 1rem 0;
           flex-direction: column;
      }
 
      .section-2-content img {
-          width: 90%;
+          width: 100%;
      }
 
      .section-2-about-content {
@@ -1872,7 +1899,7 @@ section {
 
      .section-18-feature-box img {
           padding: 5px 18px;
-          width: 100%;
+          width: 70%;
      }
 
      .section-18-feature-box-details {
