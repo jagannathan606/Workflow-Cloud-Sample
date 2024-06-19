@@ -1306,6 +1306,23 @@ section {
 /* ------------- */
 /* Media Queries */
 /* ------------- */
+
+
+/* ------------- */
+/* 2xl Desktop */
+/* ------------- */
+@media (min-width: 1467px){
+     .section-15-header {
+          width: 50%;
+      }
+      .section-16-content-3 img {
+          width: 60%;
+      }
+}
+
+
+
+/* ------------- */
 /* Tablets Devices*/
 /* -------------- */
 @media (max-width: 768px) {
@@ -1452,7 +1469,7 @@ section {
 
      /* Section - 2 */
      .section-2 {
-          margin-top: -2rem;
+          margin-top: -3rem;
           padding: 2rem 0%;
      }
 
@@ -1885,7 +1902,7 @@ section {
 
      .section-17-footer-right img {
           margin-top: 3rem;
-          width: 100%;
+          width: 70%;
           padding: 0px;
      }
 
