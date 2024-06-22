@@ -520,6 +520,10 @@ section {
      background-color: var(--pale-blue-box-bg-color);
 }
 
+.section-9-system-configation-image-mobile-design {
+     display: none;
+}
+
 /* ---------- */
 /* section -10 */
 /* ---------- */
@@ -538,7 +542,8 @@ section {
      width: 39%;
      margin-top: 20px;
 }
-.section-10-example-image-2{
+
+.section-10-example-image-2 {
      width: 50%;
 }
 
@@ -974,9 +979,11 @@ section {
      justify-content: space-evenly;
      margin: 3rem 0;
 }
-.tech-icons div{
-  text-align: center;
+
+.tech-icons div {
+     text-align: center;
 }
+
 .tech-icons img {
      width: 100px;
 }
@@ -1311,21 +1318,24 @@ section {
 /* ------------- */
 /* 2xl Desktop */
 /* ------------- */
-@media (min-width: 1467px){
+@media (min-width: 1400px) {
+     section {
+          padding: 30px 12%;
+     }
+
      .section-15-header {
           width: 50%;
-      }
-      .section-16-content-3 img {
+     }
+
+     .section-16-content-3 img {
           width: 60%;
-      }
+     }
 }
-
-
 
 /* ------------- */
 /* Tablets Devices*/
 /* -------------- */
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px) {
      h1 {
           font-size: 48px;
      }
@@ -1605,7 +1615,16 @@ section {
      /* Section-9*/
 
      .section-9-box-container {
+          display: none;
           flex-direction: column;
+     }
+
+     .section-9-system-configation-image-mobile-design {
+          display: block;
+          width: 100%;
+          height: 430px;
+          object-fit: cover;
+          object-position: center;
      }
 
      .section-9-big-box {
