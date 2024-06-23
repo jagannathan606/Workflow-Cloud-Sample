@@ -1,7 +1,13 @@
+/* Font style */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
      margin: 0;
      padding: 0;
-     font-family: "Open", sans-serif;
+     font-family: "Noto Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
 }
 
 :root {
@@ -27,35 +33,29 @@ body {
 
 h1 {
      font-size: 59px;
-     font-family: "Arimo", sans-serif;
 }
 
 h2 {
      font-size: 30px;
-     font-family: "Fraunces", serif;
      font-weight: 500;
 }
 
 h3 {
      font-size: 25px;
-     font-family: "Fraunces", serif;
      font-weight: 500;
 }
 
 h4 {
      font-size: 23px;
-     font-family: "Fraunces", serif;
 }
 
 h5 {
      font-size: 20px;
-     font-family: "Fraunces", serif;
      margin: 0;
 }
 
 p {
-     font-size: 17px;
-     font-family: "Fraunces", serif;
+     font-size: 16px;
 }
 
 section {
@@ -1335,7 +1335,7 @@ section {
 /* ------------- */
 /* Tablets Devices*/
 /* -------------- */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
      h1 {
           font-size: 48px;
      }
@@ -1464,7 +1464,7 @@ section {
      }
 
      p {
-          font-size: 12px;
+          font-size: 14px;
      }
 
      /* Section - 1 */
@@ -1535,16 +1535,22 @@ section {
      }
 
      .section-4-paragraph-btn {
-          padding: 0rem 0 3rem 3rem;
+          padding: 0rem 0 1rem 3rem;
      }
 
      .section-4-paragraph-btn p {
+          width: 100%;
           line-height: 19px;
+     }
+
+     .second-row .section-4-box-style,
+     .third-row .section-4-box-style {
+          margin-bottom: 0;
      }
 
      .section-4-box-style {
           width: 85%;
-          margin: 9px -5px;
+          margin: 25px -5px 0;
           padding-bottom: 1.5rem;
      }
 
@@ -1560,6 +1566,11 @@ section {
 
 
      /* Section 5 */
+     .section-5-example-image {
+          text-align: center;
+          padding-top: 2rem;
+     }
+
      .section-5-example-image img {
           width: 100%;
      }
@@ -1567,10 +1578,16 @@ section {
      /* Section 6 */
      .section-6 .section-6-main-paragraph {
           width: 100%;
+          margin-bottom: 35px;
      }
 
      .section-6-box-container {
+          margin-bottom: 1rem;
           grid-template-columns: repeat(1, 1fr);
+     }
+
+     .section-6-box {
+          margin-bottom: 0;
      }
 
      .section-6-box p {
@@ -1578,8 +1595,17 @@ section {
      }
 
      /* Section 7 */
+     .section-7 h2 {
+          margin-bottom: 3rem;
+     }
+
      .section-7-box-container {
+          margin-bottom: 1rem;
           grid-template-columns: repeat(1, 1fr);
+     }
+
+     .section-7-box {
+          margin-bottom: 0;
      }
 
      .special-box {
@@ -1600,12 +1626,17 @@ section {
           width: 100%;
      }
 
+     .section-8-content-2-example-box-container {
+          margin-top: 1.5rem;
+     }
+
      .section-8-content-2-example-box-container div {
           flex-direction: column;
      }
 
      .section-8-content-2-example-box-container img {
           width: 100%;
+          margin: 10px;
      }
 
      .section-8-content-2-right-side-image {
@@ -1613,6 +1644,9 @@ section {
      }
 
      /* Section-9*/
+     .section-9 {
+          margin: 0;
+     }
 
      .section-9-box-container {
           display: none;
@@ -1672,6 +1706,10 @@ section {
      }
 
      /* Section-11 */
+     .section-11 {
+          margin: 0px;
+     }
+
      .features-container {
           flex-direction: column;
      }
@@ -1693,7 +1731,9 @@ section {
 
      .example-container {
           flex-direction: column;
+          margin-bottom: 0px;
      }
+
 
      .examle-details {
           margin-top: 1px;
@@ -1761,7 +1801,7 @@ section {
 
      .section-13-description-with-image {
           flex-direction: column;
-          gap: 2rem;
+          gap: 1rem;
      }
 
      .section-13-description-with-image img {
@@ -1783,6 +1823,10 @@ section {
 
 
      /* Section-14 */
+     .section-14 h2 {
+          margin-bottom: 0rem;
+     }
+
      .section-14-content-1 {
           flex-direction: column;
      }
@@ -1832,10 +1876,18 @@ section {
           margin-bottom: 0rem;
      }
 
+     .section-15-content-left img {
+          margin-bottom: 0rem;
+     }
+
      .section-15-content-right {
           width: 100%;
           margin-top: 0rem;
           margin-left: 0rem;
+     }
+
+     .section-15-footer {
+          margin-top: 1rem;
      }
 
      .section-15-footer img {
@@ -1883,6 +1935,10 @@ section {
           margin-top: 0;
      }
 
+     .section-16-example-box-style {
+          margin-bottom: 20px;
+     }
+
      .section-16-content-3 {
           margin-top: 0rem;
      }
@@ -1902,7 +1958,7 @@ section {
 
      .section-17-content {
           grid-template-columns: repeat(1, 1fr);
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
           gap: 50px;
      }
 
@@ -1928,14 +1984,20 @@ section {
 
      /* Section-18 */
      .section-18-feature-box {
-          flex-direction: column;
           gap: 0rem;
           margin-bottom: 0rem;
+          flex-direction: column;
+          padding: 0;
+     }
+
+     .section-18-feature-box-2,
+     .section-18-feature-box-4 {
+          flex-direction: column-reverse;
      }
 
      .section-18-feature-box img {
           padding: 5px 18px;
-          width: 70%;
+          width: 60%;
      }
 
      .section-18-feature-box-details {
